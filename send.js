@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-if (!(/^(un)?install$/.test(process.argv[2]))) {
+if (!(/^(rm|i|(un)?install)$/.test(process.argv[2]))) {
   // bail early for other commands
   process.exit(0)
 }
@@ -17,6 +17,13 @@ var ua = require('universal-analytics')
 var command = argv._[0]
 var modules = argv._.slice(1)
 var save = ''
+
+// normalize shorthands
+if (command === 'i') {
+  command = 'install'
+} else if (command === 'rm') {
+  command = 'uninstall'
+}
 
 if (argv.save) {
   save = 'save'
