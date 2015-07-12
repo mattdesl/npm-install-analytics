@@ -1,0 +1,35 @@
+{
+  "name": "npm-analytics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "chalk": "^1.1.0",
+    "rc": "^1.0.3",
+    "universal-analytics": "^0.3.8"
+  },
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "bin": {
+    "npm-analytics": "./alias.sh"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/npm-analytics.git"
+  },
+  "homepage": "https://github.com/mattdesl/npm-analytics",
+  "bugs": {
+    "url": "https://github.com/mattdesl/npm-analytics/issues"
+  }
+}
