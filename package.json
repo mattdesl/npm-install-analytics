@@ -1,5 +1,5 @@
 {
-  "name": "npm-analytics",
+  "name": "npm-install-analytics",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -21,15 +21,15 @@
     "test": "node test.js"
   },
   "bin": {
-    "npm-analytics": "./alias.sh"
+    "npm-install-analytics": "./alias.sh"
   },
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/npm-analytics.git"
+    "url": "git://github.com/mattdesl/npm-install-analytics.git"
   },
-  "homepage": "https://github.com/mattdesl/npm-analytics",
+  "homepage": "https://github.com/mattdesl/npm-install-analytics",
   "bugs": {
-    "url": "https://github.com/mattdesl/npm-analytics/issues"
+    "url": "https://github.com/mattdesl/npm-install-analytics/issues"
   }
 }
