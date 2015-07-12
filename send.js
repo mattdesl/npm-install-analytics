@@ -7,9 +7,10 @@ if (!(/^(rm|i|(un)?install)$/.test(process.argv[2]))) {
 var argv = require('minimist')(process.argv.slice(2), {
   alias: {
     save: 'S',
-    'save-dev': 'D'
+    'save-dev': 'D',
+    global: 'g'
   },
-  boolean: ['save', 'save-dev', 'save-exact', 'save-optional']
+  boolean: ['save', 'global', 'save-dev', 'save-exact', 'save-optional']
 })
 
 var command = argv._[0]
@@ -38,8 +39,10 @@ if (argv.save) {
   save = 'save-dev'
 } else if (argv['save-optional']) {
   save = 'save-optional'
+} else if (argv.global) {
+  save = 'global'
 } else {
-  save = 'default'
+  save = ''
 }
 
 if (!conf.id) {
