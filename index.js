@@ -11,7 +11,7 @@ var argv = require('minimist')(process.argv.slice(2), {
   boolean: ['save', 'save-dev', 'save-exact', 'save-optional']
 })
 
-var conf = require('rc')('npm-analytics')
+var conf = require('rc')('npm-install-analytics')
 var ua = require('universal-analytics')
 var command = argv._[0]
 var modules = argv._.slice(1)
