@@ -1,6 +1,6 @@
 {
   "name": "npm-install-analytics",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "license": "MIT",
@@ -15,8 +15,7 @@
     "rc": "^1.0.3",
     "universal-analytics": "^0.3.8"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
   },
