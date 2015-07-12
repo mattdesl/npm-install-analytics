@@ -31,6 +31,8 @@ if (argv.save) {
   save = 'save-dev'
 } else if (argv['save-optional']) {
   save = 'save-optional'
+} else {
+  save = 'default'
 }
 
 if (!conf.id) {
