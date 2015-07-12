@@ -1,3 +1,1 @@
-SCRIPT=index.js
-DIR=`dirname "$0"`
-node "$DIR/${SCRIPT#./}" "$@" & command npm "$@"
+npm-install-analytics-send "$@" & command npm "$@"

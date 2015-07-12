@@ -21,7 +21,8 @@
     "test": "node test.js"
   },
   "bin": {
-    "npm-install-analytics": "./alias.sh"
+    "npm-install-analytics": "./alias.sh",
+    "npm-install-analytics-send": "./send.js"
   },
   "keywords": [],
   "repository": {

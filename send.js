@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 if (!(/^(un)?install$/.test(process.argv[2]))) {
   // bail early for other commands
   process.exit(0)
